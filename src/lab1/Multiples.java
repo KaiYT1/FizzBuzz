@@ -2,17 +2,18 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        System.out.println(multiplesOfThree(1000));
+        int count = multiples(1000, 3, 5);
+        System.out.println(count);
     }
 
-    private static int multiplesOfThree(int i) {
-        int n = 1;
+    public static int multiples(int n, int a, int b) {
+        int i = 1;
         int count = 0;
-        while (n < i) {
-            if (n % 3 == 0 || n % 5 == 0) {
+        while (i < n) {
+            if (i % a == 0 || i % b == 0) {
                 count++;
             }
-            n++;
+            i++;
         }
         return count;
     }

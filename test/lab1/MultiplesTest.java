@@ -5,13 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /*
   Some test cases for Multiples.
  */
-public class MultiplesTest {
-
-    // TODO: When you are ready to test task X,
-    //  copy this file into the test folder.
+class MultiplesTest {
 
     @Test
-    public void testFifteen() {
+    void testFifteen() {
         assertEquals(7,
                 Multiples.multiples(16, 3, 5),
                 "Multiples.multiples(16, 3, 5) is incorrect, the values" +
@@ -19,7 +16,7 @@ public class MultiplesTest {
     }
 
     @Test
-    public void testTen() {
+    void testTen() {
         assertEquals(4,
                 Multiples.multiples(10, 3, 5),
                 "Multiples.multiples(10, 3, 5) is incorrect, the values" +
@@ -27,14 +24,14 @@ public class MultiplesTest {
     }
 
     @Test
-    public void testThousand() {
+    void testThousand() {
         assertEquals(466,
                 Multiples.multiples(1000, 3, 5),
                 "Multiples.multiples(1000, 3, 5) is incorrect.");
     }
 
     @Test
-    public void testEquals() {
+    void testEquals() {
         assertEquals(249,
                 Multiples.multiples(1000, 4, 4),
                 "Multiples.multiples(1000, 4, 4) is incorrect.");
